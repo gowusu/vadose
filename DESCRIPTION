@@ -1,0 +1,24 @@
+Package: vadose
+Type: Package
+Title: R Estimation of infiltration, particle size distribution,
+        saturated hydraulic conductivity, and soil water retention in
+        the vadose zone
+Version: 1.0-0
+Date: 2015-09-19
+Author: George Owusu <owusugeorge@ug.edu.gh>
+Maintainer: George Owusu <gowusu@gmail.com>
+Depends: R (>= 2.10),nlmrt
+Description: This R function computes infiltration, particle size distribution,
+    saturated hydraulic conductivity, and soil water retention. The are 12
+    infiltration functions in the package: they include BEST, offin, Green
+    and Ampt,Philip, SCS (US-Soil Conservation Service), Kostiakov, Horton,
+    Swartzendruber,Modified Kostiakov, Revised Modified Kostiakov, brutsaert and
+    valiantzas. There are 15 particle size distribution functions in the package
+    and they include logistic models, van Genuchten models, Fredlund models, a
+    logarithmic model, Andersson models, and Gompterz. van Genuchten water retention
+    and unsaturated hydraulic conductivity model with internal saturated hydraulic
+    conductivity functions are also implemented. There are also 12 goodness of fit
+    tests that include AIC, BIC, R2, RMSE, NRMSE, etc.
+License: GPL-2
+Packaged: 2016-04-28 03:43:42 UTC; GeoKings
+RoxygenNote: 5.0.1

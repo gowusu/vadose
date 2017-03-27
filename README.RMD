@@ -18,7 +18,13 @@ You can install the latest development version from github with,
   if(!require("nlmrt")){
   install.packages("nlmrt")
   }
-  devtools::install_github("gowusu/vadose")
+if(!require("httr ")){
+  install.packages("httr")
+  }
+if(!require("vadose ")){
+devtools::install_github("gowusu/vadose")
+  }
+
 </code></pre>
 
 

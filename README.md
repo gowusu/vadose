@@ -13,6 +13,10 @@ Specifically, the package can perform the following functions:
 ## Installation
 You can install the latest development version from github with,
  <pre><code> if (packageVersion("devtools") < 1.6) {
+ 
+  if (!require(devtools)) {
+  install.packages("devtools")
+  }
   install.packages("devtools")
   }
   if(!require(nlmrt)){

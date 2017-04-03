@@ -15,13 +15,13 @@ You can install the latest development version from github with,
  <pre><code> if (packageVersion("devtools") < 1.6) {
   install.packages("devtools")
   }
-  if(!require("nlmrt")){
+  if(!require(nlmrt)){
   install.packages("nlmrt")
   }
-if(!require("httr ")){
+if(!require(httr)){
   install.packages("httr")
   }
-if(!require("vadose ")){
+if(!require(vadose)){
 devtools::install_github("gowusu/vadose")
   }
 

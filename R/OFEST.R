@@ -1123,6 +1123,7 @@ plot.OFEST<-function(x,main=NULL,xlab="Water Content",
                      col=c("blue", "red", "darkgreen","gold"),
                      units=c("s","mm"),mfrow=c(2,2),type="all",legend=TRUE,opar=par(mar=c(2,2,1.5,2)),...)
 {
+
   if(!is.null(x$philip)){
     object=x
     #par(mfrow=c(2,2),mar=c(4, 4, 4, 4))de
@@ -1269,6 +1270,7 @@ plot.OFEST<-function(x,main=NULL,xlab="Water Content",
 K=object$K
 h=object$h
 mod_theta=object$mod_theta
+mod_thetay=object$mod_theta
 theta=object$theta
 obs=object$data[[object$I]]
 time=object$data[[object$time]]
@@ -1328,7 +1330,7 @@ plot(mod_theta, K, type = "l", axes = FALSE, bty = "n", xlab = "", ylab = "",log
 }else{
 plot(mod_theta, K, type = "l", axes = FALSE, bty = "n", xlab = "", ylab = "",col=kcol,...)
 }
-
+if(!is.null(x$philip)){
 axis(side=4, ylim=c(0, ymax))
 mtext(ylab2, side=4, line=2,cex=0.8)
 index1=length(mod_thetay)
@@ -1336,7 +1338,7 @@ index2=length(mod_thetay)-1
 leb=(mod_thetay[index2]-mod_thetay[index1])
 text(max(mod_thetay)-(0*6),max(Kb),"K")
 text(min(mod_thetay)+(0*6),max(Kb),"h")
-
+}
 }
 
 if(type=="all"||type=="psd"||type=="PSD"){

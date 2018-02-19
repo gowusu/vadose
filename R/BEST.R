@@ -1689,7 +1689,7 @@ plot.BEST<-function(x,main=NULL,xlab="Water Content",
   }
   
   if(type=="all"||type=="psd"||type=="PSD"){
-    plot(object$psd)
+    plot(object$psd,xlab=2)
   }
   if(type=="all"){
     par(mfrow=c(1,1))

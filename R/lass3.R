@@ -312,7 +312,9 @@ mod1=object
 if(mod1$PSDF==TRUE||!is.null(mod1$PSDF==TRUE)){
 plot(mod1$D,mod1$fr,xlab=xlab,ylab=ylab)
 lines(mod1$x,mod1$y)
+if(xlab!="2"){
 mtext(paste("R^2=",round(cor(mod1$predict,mod1$fr)^2,3)))
+}
 title(main)
 }
 }
